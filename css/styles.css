@@ -102,6 +102,7 @@ h6 {
 .p-small {
 	font-size: 0.875rem;
 	line-height: 1.5rem;
+	color:#EB0028
 }
 
 .testimonial-text {
@@ -1072,7 +1073,7 @@ a:hover {
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-    color: #7dc22b;
+    color: #EB0028;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -1085,7 +1086,7 @@ a:hover {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: #121015;
+	background-color: #000000;
 	text-align: center;
 }
 
