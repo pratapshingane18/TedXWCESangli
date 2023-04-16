@@ -484,7 +484,15 @@ a:hover {
 
 .header .h1-large {
 	margin-bottom: 2.5rem;
-	color: red;
+	color: #EB0028;
+	font-size: 4rem;
+	line-height: 4.5rem;
+	font: Helvetica;
+}
+
+.header .whitecolor{
+	margin-bottom: 2.5rem;
+	color: white;
 	font-size: 4rem;
 	line-height: 4.5rem;
 }
