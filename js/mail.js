@@ -18,16 +18,17 @@ const firebaseConfig = {
 
   var contactFormDB = firebase.database().ref("tedx-contactForm");
 
-  document.getElementById('contactForm').addEventListener('submit', submitForm);
+  document.getElementById('tedx-contactForm').addEventListener('submit', submitForm);
 
   function submitForm(e){
     e.preventDefault();
 
-    var name=getElementById('name');
+    var name = getElementById('name');
     var email = getElementById('email');
     var message = getElementById('message');
 
       saveMessage(name,email,message);
+      console.log(name,email,message);
     
   }
 
@@ -40,9 +41,10 @@ const firebaseConfig = {
       email:email,
       message:message,
     });
-  }
+  };
 
 
   const getElementVar = (id) => {
     return document.getElementById(id).value;
-  }
+  };
+
