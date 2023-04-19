@@ -191,9 +191,9 @@ a:hover {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #7dc22b;
+	border: 1px solid #EB0028;
 	border-radius: 4px;
-	background-color: #7dc22b;
+	background-color: #EB0028;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -267,6 +267,8 @@ a:hover {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+
 
 .form-group {
 	position: relative;
@@ -1370,6 +1372,7 @@ a:hover {
 		margin-top: 7rem;
 		margin-left: 2rem;
 	}
+
 	/* end of header */
 
 

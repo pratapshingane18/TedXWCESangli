@@ -16,35 +16,35 @@ const firebaseConfig = {
 
   // Reference your DB
 
-  var contactFormDB = firebase.database().ref("tedx-contactForm");
+  var contactFormDB = firebase.database().ref("contactform");
 
-  document.getElementById('tedx-contactForm').addEventListener('submit', submitForm);
+  document.getElementById("contactForm").addEventListener("submit", submitForm);
 
   function submitForm(e){
     e.preventDefault();
 
-    var name = getElementById('name');
-    var email = getElementById('email');
-    var message = getElementById('message');
+    var name = getElementVal('name');
+    var email = getElementVal('email');
+    var message = getElementVal('message');
 
       saveMessage(name,email,message);
-      console.log(name,email,message);
+     console.log(name,email,message);
     
   }
 
-
+ 
   const saveMessage = (name, email, message) =>{
     var newContactform = contactFormDB.push();
 
     newContactform.set({
-      name:name,
-      email:email,
-      message:message,
+      name : name, 
+      email : email,
+      message : message,
     });
   };
 
 
-  const getElementVar = (id) => {
+  const getElementVal = (id) => {
     return document.getElementById(id).value;
   };
 
