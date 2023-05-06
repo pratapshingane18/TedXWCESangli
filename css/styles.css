@@ -940,6 +940,68 @@ Loader
 	color: #2b2b4f;
 }
 
+/* FAQ*/
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+.faq-container {
+  margin: 0 auto;
+font-family:'cairo',serif;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.5s ease;
+  border-radius: 5px;
+}
+
+.faq-question.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.faq-question:hover {
+  background-color: #EB0028;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #e6e6e6;
+  padding: 10px;
+  color: #000;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+.faq-icon {
+  font-weight: bold;
+  margin-left: 10px;
+  transition: transform 0.5s ease;
+}
+
+.faq-icon.minus {
+  transform: rotate(45deg);
+}
+
+/* Add transition to the height of the answer when closing */
+.faq-answer:not(.active) {
+  height: 0 !important;
+  transition: height 5s ease;
+}
+
 
 /****************/
 /*     Team     */
