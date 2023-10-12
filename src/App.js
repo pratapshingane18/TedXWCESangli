@@ -5,17 +5,13 @@ import Registration from "./pages/Registration";
 import Speakerinfo from "./pages/Speakerinfo";
 // import Teaminfo from './pages/Teaminfos';
 import Footer from "./pages/Footer";
-// import Spepageper from './pages/Homepage/SubHomepages/Spepageper';
-// import Spepageone from './pages/Homepage/SubHomepages/Spepageone';
-// import Spepagetwo from './pages/Homepage/SubHomepages/Spepagetwo';
-// import Spepagethree from './pages/Homepage/SubHomepages/Spepagethree';
-// import Spepagefour from './pages/Homepage/SubHomepages/Spepagefour';
-// import Speapagefive from './pages/Homepage/SubHomepages/Speapagefive';
+
 import Navigation from "./pages/nav";
 
 import { NavLink, Route, Routes, Navigate } from "react-router-dom";
 import Team from "./pages/team";
 import Error from "./pages/error";
+import endFooter from "./pages/endfooter";
 
 function App() {
   return (
@@ -40,6 +36,7 @@ function App() {
       </Routes>
 
       <Footer></Footer>
+      {/* <endFooter></endFooter> */}
     </div>
   );
 }

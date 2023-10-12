@@ -128,7 +128,7 @@ const Navigation = () => {
           onClick={() => handleItemClick('speakerinfo')}
           className="rounded p-2"
         >
-          <NavLink to="/speaker">speakers</NavLink>
+          <NavLink to="/speaker">Speakers</NavLink>
         </li>     
 
 

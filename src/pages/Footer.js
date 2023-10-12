@@ -1,49 +1,45 @@
-import React from 'react';
-import {CiLocationOn} from 'react-icons/ci'
+import React from "react";
+import { FaPhone, FaEnvelope, FaLinkedin, FaInstagram, FaTwitter} from "react-icons/fa";
+import {ImLocation} from 'react-icons/im'
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-900 text-white py-6">
-      <div className="container mx-auto flex flex-col md:flex-row justify-around items-center">
-        {/* Social Media */}
-        <div className="flex mb-4 md:mb-0 space-x-4">
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-500"
-          >
-            <i className="fab fa-instagram text-2xl"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-500"
-          >
-            <i className="fab fa-linkedin text-2xl"></i>
-          </a>
+    <footer className="bg-zinc-700 text-white py-8 flex flex-row justify-center">
+      <div className="container mx-auto flex flex-wrap justify-center">
+        <div className="w-full sm:w-1/2 md:w-1/3 mb-4 sm:mb-0">
+          <div className="mb-2 font-bold">Ask Us</div>
+          <div className="flex items-center mb-2">
+            <FaPhone className="mr-2" />
+            <span>Phone: +1-123-456-7890</span>
+          </div>
+          <div className="flex items-center">
+            <FaEnvelope className="mr-2" />
+            <span>Email: info@example.com</span>
+          </div>
         </div>
-
-        {/* Address */}
-        <div className="text-center md:text-left mb-4 md:mb-0 md:ml-4">
-          
-        
-        <span className="inline-flex">
-        <CiLocationOn></CiLocationOn>
-        <p className="m-2  inline-block">Walchand College of Engineering, Vishrambagh Sangli 416415</p>
-        </span>
-
-        
-          
+        <div className="w-full sm:w-1/2 md:w-1/3 mb-4 sm:mb-0">
+          <div className="mb-2 font-bold">ADDRESS</div>
+          <div className="flex items-center mb-2">
+            <div className="mr-2">
+            <ImLocation></ImLocation>
+            </div>
+            <span>Your College Name</span>
+          </div>
+          <div>Your Full Address, City, State, ZIP</div>
         </div>
-
-        {/* Contact Details */}
-        <div className="text-center md:text-right md:ml-4">
-          <p className="text-white">
-            Phone: +1 (123) 456-7890<br />
-            Email: info@example.com
-          </p>
+        <div className="w-full sm:w-1/2 md:w-1/3">
+          <div className="mb-2 font-bold">Social Media</div>
+          <div className="flex items-center">
+            <a href="#" className="mr-2">
+              <FaLinkedin className="text-white" />
+            </a>
+            <a href="#" className="mr-2">
+              <FaInstagram className="text-white" />
+            </a>
+            <a href="#">
+              <FaTwitter className="text-white" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
