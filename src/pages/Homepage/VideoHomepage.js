@@ -1,5 +1,5 @@
 import React from "react";
-import "../../pagescss/video.css";
+// import "../../pagescss/video.css";
 
 const VideoHomepage = () => {
   return (

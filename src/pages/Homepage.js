@@ -2,7 +2,7 @@ import React from 'react';
 import Infosection from '../pages/Homepage/Infosection';
 import  Speaketphoto from '../pages/Homepage/Speakerpht';
 import VideoHomepage from './Homepage/VideoHomepage';
-import  '../pagescss/Homepage.css';
+// import  '../pagescss/Homepage.css';
 import EventSchedule from './Homepage/EventTimeline';
 import Notify from './Homepage/EventNotify';
 const Homepage = () => {
